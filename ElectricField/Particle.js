@@ -6,7 +6,7 @@ class Particle {
   
     draw() {
       if(this.charge === -1.602176e-19){
-        // Führe spezifische Zeichenanweisungen für das Electron-Objekt aus
+        // draw Electron
         push();
         fill(84, 116, 214);
         translate(this.pos.re, this.pos.im);
@@ -15,7 +15,7 @@ class Particle {
         rect(-rectangleSizeX * (1 / 2), -rectangleSizeY * (1 / 2), rectangleSizeX, rectangleSizeY);
         pop();
       }else{
-        // Führe spezifische Zeichenanweisungen für das Proton-Objekt aus
+        // draw Proton
         push();
         fill(252, 164, 10);
         translate(this.pos.re, this.pos.im);
